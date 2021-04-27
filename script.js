@@ -1,16 +1,21 @@
 let menuBtn = document.querySelector(".menu-btn");
 let cancelBtn = document.querySelector(".cancel-btn");
 let navBar = document.querySelector(".navbar")
+let body = document.querySelector("body")
+
+
 
 menuBtn.onclick = function() {
     menuBtn.style.opacity = "0";
     menuBtn.style.pointerEvents = "none";
     navBar.classList.add("active");
+    body.style.overflow = "hidden";
 }
 cancelBtn.onclick = function() {
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
     navBar.classList.remove("active");
+    body.style.overflow = "auto";
 }
 
 let nav = document.querySelector("nav");
@@ -21,4 +26,15 @@ window.onscroll = function() {
     }else{
         nav.classList.remove("sticky");
     }
+}
+
+let navLinks = document.querySelectorAll(".menu li a");
+for (let index = 0; index < navLinks.length; index++) {
+    navLinks[index].addEventListener("click", ()=>{
+        menuBtn.style.opacity = "1";
+        menuBtn.style.pointerEvents = "auto";
+        navBar.classList.remove("active");
+        body.style.overflow = "auto";
+    });
+    
 }
