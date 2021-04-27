@@ -466,9 +466,12 @@ footer .text span a:hover{
     justify-content: space-between;
     }
     .skills .skill-details .topic{
+        align-items: center;
+        width: 100%;
         text-align: center;
     }
     .skills .skill-details p{
+        width: 100%;
         text-align: center;
     }
     .skills .skill-details .num{
