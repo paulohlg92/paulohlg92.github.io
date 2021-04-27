@@ -465,6 +465,15 @@ footer .text span a:hover{
     align-items: center;
     justify-content: space-between;
     }
+    .skills .skill-details .topic{
+        text-align: center;
+    }
+    .skills .skill-details p{
+        text-align: center;
+    }
+    .skills .skill-details .num{
+        text-align: center;
+    }
     .skills .skill-details .experience{
         justify-content: center;
     }
@@ -477,6 +486,7 @@ footer .text span a:hover{
     }
     .mylinks .boxes .box{
         width: 100%;
+        justify-content: center;
     }
     .contact .text{
         width: 100%;
