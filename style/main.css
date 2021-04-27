@@ -328,6 +328,10 @@ section .button button:hover{
     color: #FFF;
     transition: all 0.4s ease;
 }
+.mylinks .boxes .box a{
+    color: #0E2431;
+    transition: all 0.4s ease;
+}
 .mylinks .boxes .box:hover a{
     color: #FFF;
     transition: all 0.4s ease;
